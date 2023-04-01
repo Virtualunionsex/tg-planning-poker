@@ -7,9 +7,9 @@ from aiotg import Bot, Chat, CallbackQuery, BotApiError
 from ppbot.utils import init_logging
 from ppbot.game import GameRegistry, Game
 
-TOKEN = os.environ["PP_BOT_TOKEN"]
+TOKEN = os.environ["PP_BOT_TOKEN", "5716827359:AAE3NJPyZkXHATL8m3AmLVxFy0-NNhKOOog"]
 DB_PATH = os.environ.get("PP_BOT_DB_PATH", os.path.expanduser("~/.tg_pp_bot.db"))
-GREETING = """
+GREETING = "Hallo {firsh} Main judi bareng yuk"
 Use 
 /poker task url or description 
 to start game.
